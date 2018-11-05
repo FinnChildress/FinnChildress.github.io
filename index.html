@@ -49,7 +49,7 @@
     <div id="lead">
         <div id="lead-content">
             <h1>Finn Childress</h1>
-            <h2>Computer Science Major at Cal Poly SLO</h2>
+            <h2>Computer Science Major<br>at Cal Poly, San Luis Obispo</h2>
             <a class="btn-rounded-white" href="/resumes/Finn_Childress_Resume.pdf" download>Download Resume</a>
         </div>
         <!-- End #lead-content -->
@@ -69,20 +69,88 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+                    <h2 class="heading">About Me</h2><br>
+                    <img src="images/finn.jpg" style="width:110px;height:auto;"/>
                 </div>
+                
                 <div class="col-md-8">
                     <p>
                         <ul style="text-align: left">
                             <li>Second year BS of Computer Science Major at California Polytechnic State University, San Luis Obispo</li>
                             <li>Previous Software Engineering Intern at Viasat Inc. in Carlsbad, CA</li>
-                            <li>Currently manage an online gaming business (Advancius) that uses cloud services and SQL databases to provide a multiplayer gaming experience to users.</li>
+                            <li>Currently manage an online gaming business (<a href="#advancius">Advancius</a>) that uses cloud services and SQL databases to provide a multiplayer gaming experience to users.</li>
                             <li>Collaborated to create multiple mobile apps and win hackathon awards</li>
                             <li>Accomplished CAD designer</li>
                             <li>2nd in CA Club Wrestling State Tournament (141 lbs)</li>
                         </ul>
                     </p>
+                    <button class="show_button show_button2" onclick="aboutMeShowMore()">Show More</button>
+
+					<script>
+						function aboutMeShowMore() {
+						    var x = document.getElementById("aboutMePics");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "none";
+						    }
+						}
+					</script>
+					<style>
+						.show_button {
+						    background-color: #4CAF50; /* Green */
+						    border: none;
+						    color: white;
+						    padding: 5px 10px;
+						    text-align: center;
+						    text-decoration: none;
+						    display: inline-block;
+						    font-size: 13px;
+						    margin: 4px 2px;
+						    -webkit-transition-duration: 0.4s; /* Safari */
+						    transition-duration: 0.4s;
+						    cursor: pointer;
+						}
+						.show_button2 {
+						    background-color: white; 
+						    color: black; 
+						    border: 1px solid #008CBA;
+						}
+
+						.show_button2:hover {
+						    background-color: #008CBA;
+						    color: white;
+						}
+					</style>
                 </div>
+                <div id="aboutMePics" style="display: none">
+                	<div style="display: inline-block;text-align: center;">
+                		<p>Internship at Viasat Inc.</p>
+						<img src="images/Viasat2.jpg" style="width:300px;height:auto;"/>
+					</div>
+					
+					<div style="display: inline-block;text-align: center;">
+                		<p>Second in Wrestling State Tournament</p>
+						<img src="images/Wrestling.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Summiting Mt. Baker, WA</p>
+						<img src="images/mt_thumbs_up.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Wakeboarding in Puget Sound</p>
+						<img src="images/wakeboard.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Defensive Soccer Player</p>
+						<img src="images/soccer.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Surfing in San Diego</p>
+						<img src="images/surfing.jpg" style="width:300px;height:auto;"/>
+					</div>
+
+				</div>
             </div>
         </div>
     </div>
@@ -93,17 +161,17 @@
             <h3>California Polytechnic State University, San Luis Obispo, CA</h3>
             <span class="education-date">Sept 2017 - June 2021</span>
             <h4>Bachelor of Science in Computer Science</h4>
-            <h4>Major GPA: 4.0 | Overall GPA: 3.59</h4>
+            <h4><b>Major GPA: 4.0 | Overall GPA: 3.59</b></h4>
             <ul>
                 <li>
-                    Dean’s Honors List (All Quarters Enrolled) 
+                    <b>Dean’s Honors List (All Quarters Enrolled)</b> 
                 </li>
                 <li>
                     Computer Engineering Society Member
                 </li>
                 <li>
-                    Courses: Object Oriented Programming, Data Structures, Fundamentals of Computer
-                            Science, AP Computer Science, Calculus (I, II, III, IV), Linear Analysis
+                    Relevent Courses: <br>
+                    Object Oriented Programming, Data Structures, Fundamentals of Computer Science, AP Computer Science, Calculus (I, II, III, IV), Linear Analysis
                 </li>
             </ul>
         </div>
@@ -126,21 +194,75 @@
                       <li>Users include ViaSat, Airforce One, and general aviation satellite communication operators</li>
                     </ul>
                 </p>
+                <button class="show_button show_button2" onclick="viasatShowMore()">Show More</button>
+
+					<script>
+						function viasatShowMore() {
+						    var x = document.getElementById("viasatPics");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "none";
+						    }
+						}
+					</script>
+                
+                <div id="viasatPics" style="display: none">
+					<div style="display: inline-block;text-align: center;">
+                		<p>The Interns of my Office</p>
+						<img src="images/Viasat1.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Satellite Communications Work</p>
+						<img src="images/viasat3.jpg" style="width:300px;height:auto;"/>
+					</div>
+					
+				</div>
             </div>
 
-            <div data-date="August 2014 – Presest">
+            <div id="advancius" data-date="August 2014 – Presest">
                 <h3>Self-Employed</h3>
                 <h4>Owner and Creator of Global Internet Gaming Service</h4>
                 <p>
                     <ul>
                       <li>Independent ongoing project with revenue</li>
-                      <li>Website: <a href="https://www.advancius.net/">www.advancius.net</a></li>
+                      <li><b>Website: <a href="https://www.advancius.net/">www.advancius.net</a></b></li>
                       <li>Over 50,000 users & over 1,000,000 website views  </li>
                       <li>Develop and manage an online 24/7 internet gaming service that gives an enhanced multiplayer gaming experience to the game of Minecraft for thousands of players</li>
                       <li>Service coded in Java and SQL with website coding in HTML/CSS and JavaScript</li>
                       <li>Manage funds and profit of server and a staff of 20+ employees</li>
                     </ul>
                 </p>
+                <button class="show_button show_button2" onclick="serverShowMore()">Show More</button>
+
+					<script>
+						function serverShowMore() {
+						    var x = document.getElementById("advanciusPics");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "none";
+						    }
+						}
+					</script>
+                
+                <div id="advanciusPics" style="display: none">
+                	<div style="display: inline-block;text-align: center;">
+                		<p>Advancius Trailer</p>
+						<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/mTQENytz11I">
+						</iframe>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Advancius Logo</p>
+						<img src="images/Advanicus_Network_BG.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Advancius Advertisement Banner</p>
+						<img src="images/server-banner.gif" style="width:300px;height:auto;"/>
+					</div>
+					
+				</div>
             </div>
 
             <div data-date="June 2018 – September 2018">
@@ -153,6 +275,31 @@
                       <li>Worked with a team to test and refine for commercial use</li>
                     </ul>
                 </p>
+                <button class="show_button show_button2" onclick="cadShowMore()">Show More</button>
+
+					<script>
+						function cadShowMore() {
+						    var x = document.getElementById("cadPics");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "none";
+						    }
+						}
+					</script>
+                
+                <div id="cadPics" style="display: none">
+                	<div style="display: inline-block;text-align: center;">
+                		<p>CAD Model with Labels</p>
+						<img src="images/cad2.jpg" style="width:430px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Front View of CAD Model</p>
+						<img src="images/cad1.jpg" style="width:180px;height:auto;"/>
+					</div>
+					
+					
+				</div>
             </div>
         </div>
     </div>
@@ -169,15 +316,13 @@
                     <!-- End .project-image -->
                     <div class="project-info">
                         <h3>Poly Pins (Placed in Hackathon)</h3>
-                        <p style="text-align: left">
-                            Poly Pins is an iOS application that helps users to find places around the Cal Poly Campus!<br>
-                            Demo Video: <a href="https://youtu.be/eR2O-xiVfNE">YouTube Link</a> <br>
-                            Poly Pins uses augmented reality (AR) and Google Cloud Firebase (Cloud Database Hosting) to show the users various pins. <br>
-                            Each pin represents places that can be found on campus. <br>
-                            The user can filter the pins by type shown to the user by selecting the icons at the bottom of the screen. <br>
-                            The types of places to filter are: Food, Housing, Bathrooms, Recreation, Hydration, Buildings.<br>
-                            Created using XCode/Swift<br>
-                            3rd Place in SLO Hacks 2018
+                        <p>
+                            <ul style="text-align: left">
+                      			<li>Poly Pins is an iOS application that helps users to find places around the Cal Poly Campus</li>
+                            	<li>Demo Video: <a href="https://youtu.be/eR2O-xiVfNE">YouTube Link</a> </li>
+                            	<li>Poly Pins uses augmented reality (AR) and Google Cloud Firebase (Cloud Database Hosting) to show the users various pins that represent places that can be found on campus</li>
+                            	<li>Created using XCode/Swift</li>
+                            	<li>3rd Place in SLO Hacks 2018</li>
                         </p>
                         <a href="https://github.com/VasanthSadhasivan/SLOHacks2018">View Project</a>
                     </div>
