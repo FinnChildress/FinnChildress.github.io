@@ -78,7 +78,8 @@
                         <ul style="text-align: left">
                             <li>Second year BS of Computer Science Major at California Polytechnic State University, San Luis Obispo</li>
                             <li>Previous Software Engineering Intern at Viasat Inc. in Carlsbad, CA</li>
-                            <li>Currently manage an online gaming business (<a href="#advancius">Advancius</a>) that uses cloud services and SQL databases to provide a multiplayer gaming experience to users.</li>
+                            <li>Currently manage an online gaming business (<a href="#advancius">Advancius</a>) that uses cloud 
+	                            services and SQL databases to provide a multiplayer gaming experience to users.</li>
                             <li>Collaborated to create multiple mobile apps and win hackathon awards</li>
                             <li>Accomplished CAD designer</li>
                             <li>2nd in CA Club Wrestling State Tournament (141 lbs)</li>
@@ -226,7 +227,7 @@
                 <p>
                     <ul>
                       <li>Independent ongoing project with revenue</li>
-                      <li><b>Website: <a href="https://www.advancius.net/">www.advancius.net</a></b></li>
+                      <li><b>Website: <a href="https://www.advancius.net/" target="_blank">www.advancius.net</a></b></li>
                       <li>Over 50,000 users & over 1,000,000 website views  </li>
                       <li>Develop and manage an online 24/7 internet gaming service that gives an enhanced multiplayer gaming experience to the game of Minecraft for thousands of players</li>
                       <li>Service coded in Java and SQL with website coding in HTML/CSS and JavaScript</li>
@@ -404,6 +405,32 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
+    <script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+	    // Make sure this.hash has a value before overriding default behavior
+	    if (this.hash !== "") {
+	      // Prevent default anchor click behavior
+	      event.preventDefault();
+
+	      // Store hash
+	      var hash = this.hash;
+
+	      // Using jQuery's animate() method to add smooth page scroll
+	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+	      $('html, body').animate({
+	        scrollTop: $(hash).offset().top
+	      }, 1100, function(){
+	   
+	        // Add hash (#) to URL when done scrolling (default click behavior)
+	        window.location.hash = hash;
+	      });
+	    } // End if
+	  });
+	});
+	</script>
 </body>
 
 </html>
