@@ -3,15 +3,19 @@
 
 <!DOCTYPE html>
 <html>
+
+
 <head>
 	<title>MyServer - Official Website</title>
 	<meta name="description" content="MyServer is a revolutionary Minecraft server. You can join with the IP 'play.myserver.net'.">
 	<meta name="keywords" content="MyServer, MyServer.com, Minecraft Server, Minecraft, Fun, Play, Portal, Website, Official">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="./css/stylesheet.css">
+	<link rel="stylesheet" href="stylesheet.css">
 	<script src="https://leonardosnt.github.io/mc-player-counter/dist/mc-player-counter.min.js"></script>
 </head>
+
+
 <body>
 	<div class="container">
 		<div class="logo">
@@ -49,4 +53,127 @@
 	<script src="js/firefly.js" type="text/javascript"></script>
 	<script src="./js/main.js" type="text/javascript"></script>
 </body>
+
+
+
+<script>
+	!function(a){var b={total:10,ofTop:0,ofLeft:0,on:"document.body",twinkle:.2,minPixel:1,maxPixel:2,color:"#fff",namespace:"jqueryFireFly",zIndex:Math.ceil(20*Math.random())-1,borderRadius:"50%",_paused:!1};a.firefly=function(c){if(a.firefly.settings=a.extend({},b,c),a.firefly.eleHeight=a(a.firefly.settings.on).height(),a.firefly.eleWidth=a(a.firefly.settings.on).width(),a(window).resize(function(){if("document.body"!==a.firefly.settings.on){var b=a(a.firefly.settings.on).offset();a.firefly.offsetTop=b.top,a.firefly.offsetLeft=b.left,a.firefly.eleHeight=a(a.firefly.settings.on).height(),a.firefly.eleWidth=a(a.firefly.settings.on).width()}else a.firefly.offsetTop=0,a.firefly.offsetLeft=0,a.firefly.eleHeight=a(document.body).height(),a.firefly.eleWidth=a(document.body).width()}),"document.body"!==a.firefly.settings.on){var d=a(a.firefly.settings.on).offset();a.firefly.offsetTop=d.top,a.firefly.offsetLeft=d.left,a.firefly.eleHeight=a(a.firefly.settings.on).height(),a.firefly.eleWidth=a(a.firefly.settings.on).width()}else a.firefly.offsetTop=0,a.firefly.offsetLeft=0,a.firefly.eleHeight=a(document.body).height(),a.firefly.eleWidth=a(document.body).width();for(i=0;i<a.firefly.settings.total;i++){var e=a.firefly.randomPixel(a.firefly.settings.minPixel,a.firefly.settings.maxPixel),f=a.firefly.create(e);a.firefly.fly(f)}return a.firefly.sparks=a(a.firefly.settings.on).children("."+a.firefly.settings.namespace),this},a.firefly.pause=function(b){a.firefly.settings._paused=!0,b&&a.each(a.firefly.sparks,function(b,c){a(c).stop(!0)})},a.firefly.resume=function(){a.firefly.settings._paused=!1,a.each(a.firefly.sparks,function(b,c){a.firefly.fly(c)})},a.firefly.create=function(b){return spark=a("<div>").hide(),spark.addClass(a.firefly.settings.namespace),a.firefly.settings._onSparkID++,"document.body"===a.firefly.settings.on?a(document.body).append(spark):a(a.firefly.settings.on).append(spark),spark.css({position:"absolute",width:b,height:b,"background-color":a.firefly.settings.color,"z-index":a.firefly.settings.zIndex,"border-radius":a.firefly.settings.borderRadius,top:a.firefly.offsetTop+a.firefly.random(a.firefly.eleHeight-50),left:a.firefly.offsetLeft+a.firefly.random(a.firefly.eleWidth-50),"pointer-events":"none"}).show()},a.firefly.fly=function(b){a(b).animate({top:a.firefly.offsetTop+a.firefly.random(a.firefly.eleHeight-50),left:a.firefly.offsetLeft+a.firefly.random(a.firefly.eleWidth-50),opacity:a.firefly.opacity(a.firefly.settings.twinkle)},{duration:2e3*(a.firefly.random(10)+5),done:function(){a.firefly.settings._paused||a.firefly.fly(b)}})},a.firefly.randomPixel=function(a,b){return Math.floor(Math.random()*(b-a+1)+a)},a.firefly.random=function(a){return Math.ceil(Math.random()*a)-1},a.firefly.opacity=function(a){return op=Math.random(),op<a?0:1}}(jQuery);
+
+	$.firefly({
+		minPixel: 1,
+		maxPixel: 3,
+		total: 50
+	});
+</script>
+
+
+
+
+<style>
+	body {
+	/*Want to change background image?*/
+	/*Upload a new one to the img folder.*/
+	/*Make sure you name it 'minecraft.jpg'*/
+	background: linear-gradient(rgba(35,20,20,0.55),rgba(35,20,20,0.55)),
+				url("https://cdn1.imggmi.com/uploads/2019/7/29/966f1d5c88aac449a4bda66e6f8e0381-full.jpg") no-repeat center center fixed;
+    webkit-background-size: cover;
+    moz-background-size: cover;
+    o-background-size: cover;
+	background-size: cover;
+	font-family: Helvetica;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p {
+	margin: 0;
+	padding: 3px;
+}
+
+.container {
+	text-align: center;
+}
+
+.logo img {
+    margin-top: 8%;
+	width: 250px;
+	animation-name: logo;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	width: 100%;
+}
+
+@keyframes logo {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.05);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.playercount {
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px;
+	background-color: rgba(201, 48, 58, 0.65);
+	font-size: 1.22em;
+	color: white;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.playercount span {
+	font-weight: bold;
+}
+
+.items {
+	display: flex;
+	justify-content: space-around;
+	flex-basis: 100px;
+	padding: 18px 0 10px 0;
+
+}
+
+.item img {
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.item img:hover {
+	transform:scale(1.25);
+}
+
+@media(min-width: 600px) {
+	.logo img {
+		width: 350px;
+	}
+	.items {
+		padding: 30px 0 20px 0;
+	}
+}
+
+@media(min-width: 1000px) {
+	.items {
+		justify-content: center;
+	}
+
+	.item:not(:first-child) {
+		margin-left: 90px;
+	}
+}
+</style>
+
+
+
 </html>
