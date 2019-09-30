@@ -76,7 +76,8 @@
                 <div class="col-md-8">
                     <p>
                         <ul style="text-align: left">
-                            <li>Second year BS of Computer Science Major at California Polytechnic State University, San Luis Obispo</li>
+                            <li>Third year BS of Computer Science Major at California Polytechnic State University, San Luis Obispo</li>
+                            <li>Previous Software Engineering Intern at Cisco Systems Inc. in San Jose, CA</li>
                             <li>Previous Software Engineering Intern at Viasat Inc. in Carlsbad, CA</li>
                             <li>Currently manage an online gaming business (<a href="#advancius">Advancius</a>) that uses cloud 
 	                            services and SQL databases to provide a multiplayer gaming experience to users.</li>
@@ -126,8 +127,16 @@
                 </div>
                 <div id="aboutMePics" style="display: none; text-align: left;">
                 	<div style="display: inline-block;text-align: center;">
+                		<p>Internship at Cisco Systems Inc.</p>
+						<img src="images/cisco.jpg" style="width:300px;height:auto;"/>
+					</div>
+                	<div style="display: inline-block;text-align: center;">
                 		<p>Internship at Viasat Inc.</p>
 						<img src="images/Viasat2.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Hiking in Yosemite National Park</p>
+						<img src="images/yosemite.jpg" style="width:300px;height:auto;"/>
 					</div>
 					<div style="display: inline-block;text-align: center;">
                 		<p>Second in CA Wrestling State Tournament</p>
@@ -161,10 +170,10 @@
             <h3>California Polytechnic State University, San Luis Obispo, CA</h3>
             <span class="education-date">Sept 2017 - June 2021</span>
             <h4>Bachelor of Science in Computer Science</h4>
-            <h4><b>Major GPA: 3.66 | Overall GPA: 3.58</b></h4>
+            <h4><b>Major GPA: 3.67 | Overall GPA: 3.62</b></h4>
             <ul>
                 <li>
-                    <b>Multiple (4) Dean’s Honors List Awards</b> 
+                    <b>Multiple (5) Dean’s Honors List Awards</b> 
                 </li>
                 <li>
                     Computer Engineering Society Member
@@ -174,7 +183,7 @@
                 </li>
                 <li>
                     Relevent Courses: <br>
-                    Systems Programing, Computer Organization, Object Oriented Programming, Data Structures, Fundamentals of Computer Science, AP Computer Science, Calculus (I, II, III, IV), Linear Analysis
+                    Computer Architecture, Systems Programing, Computer Organization, Object Oriented Programming, Data Structures, Fundamentals of Computer Science, AP Computer Science, Calculus (I, II, III, IV), Linear Analysis
                 </li>
             </ul>
         </div>
@@ -186,6 +195,42 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+        	<div data-date="June 2019 – September 2019">
+                <h3>Cisco Systems Inc.</h3>
+                <h4>Software Engineering Intern</h4>
+                <p>
+                    <ul>
+                      <li>11-weekdata analytics summer internship </li>
+                      <li>Created Java microservice architecture for company data augmentation using Java frameworks, Maven, and data queueing to convert data storage from Hadoop database to Mongo database</li>
+                      <li>Created Python application to upload Hive data tables onto Hadoop database platform</li>
+                    </ul>
+                </p>
+                <button class="show_button show_button2" onclick="ciscoShowMore()">Show More</button>
+
+					<script>
+						function ciscoShowMore() {
+						    var x = document.getElementById("ciscoPics");
+						    if (x.style.display === "none") {
+						        x.style.display = "block";
+						    } else {
+						        x.style.display = "none";
+						    }
+						}
+					</script>
+                
+                <div id="ciscoPics" style="display: none">
+					<div style="display: inline-block;text-align: center;">
+                		<p>The Interns of my Office</p>
+						<img src="images/cisco_interns.jpg" style="width:300px;height:auto;"/>
+					</div>
+					<div style="display: inline-block;text-align: center;">
+                		<p>Microservice Architecture</p>
+						<img src="images/microservices.jpg" style="width:300px;height:auto;"/>
+					</div>
+					
+				</div>
+            </div>
+
             <div data-date="June 2018 – September 2018">
                 <h3>ViaSat Inc.</h3>
                 <h4>Software Engineering Intern</h4>
@@ -360,8 +405,9 @@
     <div id="skills">
         <h2 class="heading">Skills</h2>
         <ul>
+        	<li>Java</li>
             <li>Python</li>
-            <li>Java</li>
+            <li>C</li>
             <li>JavaScript</li>
             <li>SQL</li>
             <li>Node.js</li>
@@ -369,7 +415,7 @@
             <li>HTML</li>
             <li>CSS</li>
             <li>Swift</li>
-            <li>Linux</li>
+            <li>Hadoop</li>
             <li>MongoDB</li>
             <li>Microsoft Office</li>
             <li>GitHub</li>
